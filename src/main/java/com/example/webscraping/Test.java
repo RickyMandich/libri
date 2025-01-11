@@ -43,8 +43,6 @@ public class Test {
             libro.click();
             Thread.sleep(5000);
             System.out.println(driver.getCurrentUrl());
-            // Prima della ricerca degli elementi, aggiungi un'attesa esplicita per il container
-            wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
             // Aspetta che il contenitore principale sia presente e visibile
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("table tr td mat-icon")));
